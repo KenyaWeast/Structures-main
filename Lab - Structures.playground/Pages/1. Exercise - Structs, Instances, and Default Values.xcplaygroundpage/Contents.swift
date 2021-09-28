@@ -27,16 +27,12 @@ struct Book{
     var title:String = " "
     var author:String = " "
     var pages:Int = 0
-    var price:Int = 0
+    var price:Double = 0.0
 }
 
 /*:
  Create a variable instance of `Book` called `favoriteBook` without supplying any arguments. Print out the title of `favoriteBook`. Does it currently reflect the title of your favorite book? Probably not. Change all four properties of `favoriteBook` to reflect your favorite book. Then, using the properties of `favoriteBook`, print out facts about the book.
  */
-var favoriteBook:String = "Diary of a Wimpy Kid"
-Book.title = "Diary of a Wimpy Kid"
-Book.author = ""
-Book.pages = " "
-Book.price = " "
+var favoriteBook = Book(title: "Dairy of a Wimpy Kid", author: "Jeff Kinney", pages: 224, price: 14.99)
 print(favoriteBook)
 //: page 1 of 10  |  [Next: App Exercise - Workout Tracking](@next)
